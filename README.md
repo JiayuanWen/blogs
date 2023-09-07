@@ -1,2 +1,2 @@
 # blogs
-This repository host complete blogs for personal website
+This repository host full blogs for my personal website.
