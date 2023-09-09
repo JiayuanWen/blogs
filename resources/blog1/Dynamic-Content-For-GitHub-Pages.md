@@ -193,5 +193,5 @@ You can stylize them with stylesheets from your site's repository, or you can cr
 
 ### Final Thoughts
 
-I hope you find this tutorial helpful. If you need a working example, feel free to check out my [website](https://jiayuanwen.github.io/), the [source code](https://github.com/JiayuanWen/jiayuanwen.github.io/blob/main/js/MyProjects.js), and my own [content repository](https://github.com/JiayuanWen/JiayuanWen.github.io.data), specifically how I list my projects in My Projects page.  
+I hope you find this tutorial helpful. If you need a working example, feel free to check out my [website](https://jiayuanwen.github.io/), the [source code](https://github.com/JiayuanWen/jiayuanwen.github.io/blob/main/js/MyProjects.js), and my own [content repository](https://github.com/JiayuanWen/projects), specifically how I list my projects in My Projects page.  
 

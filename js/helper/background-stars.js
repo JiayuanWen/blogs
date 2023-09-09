@@ -39,7 +39,7 @@ function draw() {
     ctx.globalCompositeOperation = "lighter";
     for (var i = 0, x = stars.length; i < x; i++) {
         var s = stars[i];
-        ctx.fillStyle = "#ffffff";
+        ctx.fillStyle = "#cccccc";
         ctx.beginPath();
         ctx.arc(s.x, s.y, s.radius, 0, 2 * Math.PI);
         ctx.fill();
@@ -58,7 +58,7 @@ function draw() {
         }
     }
     ctx.lineWidth = 0.12;
-    ctx.strokeStyle = '#ffffff';
+    ctx.strokeStyle = '#cccccc';
     ctx.stroke();
 }
 function distance( point1, point2 ){
