@@ -1,0 +1,13 @@
+zero-md {
+
+    position: absolute;
+    left: 20.5vw;
+    right: 20.5vw;
+    top: 10vh;
+    margin: 0 auto;
+
+    opacity: 100%;
+
+    z-index: 1;
+    
+}

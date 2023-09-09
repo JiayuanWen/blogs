@@ -1,10 +1,9 @@
-# Datastore For GitHub Pages
+# Datastore and Dynamic Content For GitHub Pages
 
-**Author:** Jiayuan Wen <a href="https://github.com/JiayuanWen"><img src="https://icones.pro/wp-content/uploads/2021/06/icone-github-grise.png"/ width="20"></a> <a href="https://www.linkedin.com/in/jiayuanwen/"><img src="https://static-00.iconduck.com/assets.00/linkedin-icon-2048x2048-o354wle6.png"/ width="20"></a> 
 
 **Published Date:** 08/30/2023
 
-**Last Edited:** 08/30/2023
+**Last Edited:** 09/06/2023
 <br>
 <br>
 <br>
@@ -12,13 +11,13 @@
 
 GitHub Pages is a static site hosting service that uses resources (HTML, CSS, and JavaScript) from GitHub repository to build a public website. It is suitable for hosting a personal website for showcasing your projects, posting blogs, and share documentations and other resources, all free of charge.  
 
-One major drawback of GitHub Pages is that it only support static site, which means it does not support access to databases nor datastores. Therefore, if you have a long list of contents to display (such as a list of blogs in your blog page, or a list of projects in your project page), or want to implement any form of dynamic content, you will have to store the contents somewhere in your repository, which can result in very messy codebase, making modifications and maintenance difficult down the line. 
+One major drawback of GitHub Pages is that it only support static site, which means it does not support access to databases nor datastores. Therefore, if you have a long list of contents or content links to display, or want to implement any form of dynamic contents (such as a list of videos, news article shortcuts, or list of projects), you will have to store the contents in your site's repository, which can result in very cluttered codebase, making modifications and maintenance difficult down the line. 
 
-There is a solution to this problem, that is to use a separate repository as your site's database/datastore, this involves storing the lists of contents in a separate repository, then access them from within the GitHub Page site using jQuery. Not only does this help de-clutter your site's codebase, it also allows addition, removal, and modification to the contents without re-deploying your site. In this tutorial, I will show you how to do it. 
+There is a workaround to this drawback, that is to use a separate repository as your site's database/datastore, which involves storing the lists of contents in a separate repository, then access them from within the GitHub Page site using jQuery. Not only does this help de-clutter your site's codebase, it also allows addition, removal, and modification to the contents without re-deploying your site. In this tutorial, I will show you the how of this method.
 
 This tutorial assumes you already have basic knowledge on creating a website and using Git, so a lot of steps regarding those will be skipped over. 
 
-<sup ><font style="color: #ff9999">Note: This method of storing and organizing contents is not private. You do NOT use this method for operations involving sensitive information (such as handling of user accounts), since the contents of the repository can be easily viewed by anyone regardless of repository privacy being set to private or public.</font></sup>
+<sup ><font style="color: #ff9999">Note: This method of storing and organizing contents is not private. You do NOT use this method for operations involving sensitive information (such as handling of user accounts), since the contents of the repository can be easily viewed by anyone.</font></sup>
 
 ## Step 1. Create a GitHub Pages repository
 
@@ -28,11 +27,11 @@ Create a GitHub Pages site as normal following this [official guide](https://doc
 
 Next step is to create a separate repository for hosting your contents. I will call this repository the *content repository* from now on. 
 
-<img src="https://raw.githubusercontent.com/JiayuanWen/JiayuanWen.github.io.data/main/blogs/blog1/newRepo.png"/>
+<img src="https://raw.githubusercontent.com/JiayuanWen/blogs/main/blog1.Datastore_For_GitHub_Pages/newRepo.png"/>
 
 Name it something similar to your GitHub Pages site repository so that it is easier to find. Your site repository is named `<username>.github.io`, then you can name it `<username>.github.io.contents` (Replace `<username>` with your GitHub username or organization name).   
 
-You can either set this repository to public or private, set it to private will require you to have an access token to access the contents inside, which I will get near the end of the blog. Regardless of how you do it, do not store sensitive information or source codes in here. This tutorial will assume you have your content repository set to public.
+You have to set this repository to public for the contents inside to be accessable, so do not store sensitive information or source codes in here. This tutorial will assume you have your content repository set to public.
 
 
 
@@ -194,12 +193,5 @@ You can stylize them with stylesheets from your site's repository, or you can cr
 
 ### Final Thoughts
 
-I hope this tutorial is helpful to you in implementing specific features to your GitHub Pages site. Feel free to check out my [website](https://jiayuanwen.github.io/), the [source code](https://github.com/JiayuanWen/jiayuanwen.github.io/blob/main/js/MyProjects.js), and my own [content repository](https://github.com/JiayuanWen/JiayuanWen.github.io.data) for reference. 
+I hope you find this tutorial helpful. If you need a working example, feel free to check out my [website](https://jiayuanwen.github.io/), the [source code](https://github.com/JiayuanWen/jiayuanwen.github.io/blob/main/js/MyProjects.js), and my own [content repository](https://github.com/JiayuanWen/JiayuanWen.github.io.data), specifically how I list my projects in My Projects page.  
 
-### Q&A
-
-##### Q. What if my content repository is set to private? 
-A. Follow [this StackOverflow answer by Jakub Narebski](https://stackoverflow.com/a/72821161), modify any repository file path in Step 3 and 5 accordingly. 
-
-##### Q. I followed the tutorial but it's not working / I have specific question not listed here.
-A. Feel free to post a thread [here](https://github.com/JiayuanWen/jiayuanwen.github.io/discussions) and I will try my best to help. 

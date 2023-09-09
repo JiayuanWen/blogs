@@ -1,7 +1,44 @@
-<md-block>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Jiayuan Wen's Portfolio</title>
+
+     <!-- Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="/style.css"/>          
+
+    <!-- Site icon handler for different browsers/OSs -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/site_icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/site_icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/site_icon/favicon-16x16.png">
+    <link rel="manifest" href="/site_icon/site.webmanifest">
+    <link rel="mask-icon" href="/site_icon/safari-pinned-tab.svg" color="#547680">
+
+    <!-- Meta data -->
+    <meta charset="UTF-8">
+    <meta name="msapplication-TileColor" content="#262626">
+    <meta name="msapplication-TileImage" content="site_icon/mstile-144x144.png">
+    <meta name="theme-color" content="#000000">
+
+    <!-- Required for including Font Awesome -->
+    <script src="/js/helper/fontawesome.js" crossorigin="anonymous"></script>
+
+    <!-- Required for loading separate html files -->
+    <script src="/js/helper/w3data.js"></script>
+
+    <!-- JQuery support -->
+    <script src="/js/helper/jquery.min.js"></script>
+
+    <!-- For MarkDown rendering -->
+    <script  type="module" src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@2/dist/zero-md.min.js"></script>
+
+    
+</head>
+<body>
+
+<zero-md src="/resources/blog1.Datastore_For_GitHub_Pages/Datastore-For-GitHub-Pages.md">
     # Datastore For GitHub Pages
 
-    **Author:** Jiayuan Wen <a href="https://github.com/JiayuanWen"><img src="https://icones.pro/wp-content/uploads/2021/06/icone-github-grise.png"/ width="20"></a> <a href="https://www.linkedin.com/in/jiayuanwen/"><img src="https://static-00.iconduck.com/assets.00/linkedin-icon-2048x2048-o354wle6.png"/ width="20"></a> 
+     
     
     **Published Date:** 08/30/2023
     
@@ -29,7 +66,7 @@
     
     Next step is to create a separate repository for hosting your contents. I will call this repository the *content repository* from now on. 
     
-    <img src="https://raw.githubusercontent.com/JiayuanWen/JiayuanWen.github.io.data/main/blogs/blog1/newRepo.png"/>
+    <img src="https://raw.githubusercontent.com/JiayuanWen/blogs/main/resources/Datastore_For_GitHub_Pages/newRepo.png?token=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"/>
     
     Name it something similar to your GitHub Pages site repository so that it is easier to find. Your site repository is named `<username>.github.io`, then you can name it `<username>.github.io.contents` (Replace `<username>` with your GitHub username or organization name).   
     
@@ -196,12 +233,8 @@
     ### Final Thoughts
     
     I hope this tutorial is helpful to you in implementing specific features to your GitHub Pages site. Feel free to check out my [website](https://jiayuanwen.github.io/), the [source code](https://github.com/JiayuanWen/jiayuanwen.github.io/blob/main/js/MyProjects.js), and my own [content repository](https://github.com/JiayuanWen/JiayuanWen.github.io.data) for reference. 
-    
-    ### Q&A
-    
-    ##### Q. What if my content repository is set to private? 
-    A. Follow [this StackOverflow answer by Jakub Narebski](https://stackoverflow.com/a/72821161), modify any repository file path in Step 3 and 5 accordingly. 
-    
-    ##### Q. I followed the tutorial but it's not working / I have specific question not listed here.
-    A. Feel free to post a thread [here](https://github.com/JiayuanWen/jiayuanwen.github.io/discussions) and I will try my best to help. 
-</md-block>
+</zero-md>
+
+
+
+</body>
