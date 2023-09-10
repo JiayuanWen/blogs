@@ -87,6 +87,29 @@ pre {
 
 }
 
+#back-button {
+    color: white;
+
+    transition: 1s;
+
+    position: fixed;
+    font-size: 3.2rem;
+    left: 10px;
+    top: 6px;
+    transition: 0.3s;
+    opacity: 0.5;
+
+    z-index: 1;
+}
+    #back-button:hover {
+        opacity: 1;
+        cursor: pointer;
+    }
+    #back-button:active {
+        opacity: 0.3;
+        cursor: pointer;
+    }
+
 zero-md {
     color: white;
 
