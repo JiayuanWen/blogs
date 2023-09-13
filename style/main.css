@@ -5,7 +5,7 @@ body {
 
     z-index: 1;
     background-color: black;
-    color: white;
+    color: #efefef;
 }
 
 h1 h2 h3 h4 h5 h6 {
@@ -13,7 +13,7 @@ h1 h2 h3 h4 h5 h6 {
 }
 
 .background {
-    background-color: rgb(26, 26, 26);
+    background-color: rgb(35, 35, 35);
 
     position: fixed;
     left: 5.5vw;
@@ -82,7 +82,7 @@ pre {
 
     z-index: 0;
 
-    opacity: 100%;
+    opacity: 50%;
     pointer-events: none;
 
 }

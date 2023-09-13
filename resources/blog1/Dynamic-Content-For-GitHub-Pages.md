@@ -120,7 +120,7 @@ Create a JavaScript script somewhere in your site's repository, and include it i
 <script type="module" src="/path/to/your/script.js"></script>
 ```
 
-#### Step 5a. For loading single/specific content:
+### Step 5a. For loading single/specific content:
 
 In your script, first create a fresh `<div>` element for your content:
 ```js
@@ -147,7 +147,7 @@ Remember your `id` for your `<div>`, load the content in with this jQuery code:
 $(`div-name`).load(filePath);
 ```
 
-#### Step 5b. For loading a list of contents:
+### Step 5b. For loading a list of contents:
 
 In your script, first create a fresh `<div>` element for your content:
 ```js
@@ -185,13 +185,13 @@ for (let i = 1; i <= contentTotal; i++) {
 }
 ```
 
-### Step 7. Enjoy!
+## Step 7. Enjoy!
 
 Test out your site, you should now see your container occupied with contents from your content repository. 
 
 You can stylize them with stylesheets from your site's repository, or you can create a dedicate stylesheet for specific content, place it in content repository, then associate it with said content like you do in Step 3.  The creative choices are yours. 
 
-### Final Thoughts
+## Final Thoughts
 
 I hope you find this tutorial helpful. If you need a working example, feel free to check out my [website](https://jiayuanwen.github.io/), the [source code](https://github.com/JiayuanWen/jiayuanwen.github.io/blob/main/js/MyProjects.js), and my own [content repository](https://github.com/JiayuanWen/projects) for how I list my projects in my site.  
 
