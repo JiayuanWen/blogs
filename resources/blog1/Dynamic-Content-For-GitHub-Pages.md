@@ -187,11 +187,11 @@ for (let i = 1; i <= contentTotal; i++) {
 
 ### Step 7. Enjoy!
 
-Upon testing out your site, you should now see your container occupied with contents from your content repository. 
+Test out your site, you should now see your container occupied with contents from your content repository. 
 
 You can stylize them with stylesheets from your site's repository, or you can create a dedicate stylesheet for specific content, place it in content repository, then associate it with said content like you do in Step 3.  The creative choices are yours. 
 
 ### Final Thoughts
 
-I hope you find this tutorial helpful. If you need a working example, feel free to check out my [website](https://jiayuanwen.github.io/), the [source code](https://github.com/JiayuanWen/jiayuanwen.github.io/blob/main/js/MyProjects.js), and my own [content repository](https://github.com/JiayuanWen/projects), specifically how I list my projects in My Projects page.  
+I hope you find this tutorial helpful. If you need a working example, feel free to check out my [website](https://jiayuanwen.github.io/), the [source code](https://github.com/JiayuanWen/jiayuanwen.github.io/blob/main/js/MyProjects.js), and my own [content repository](https://github.com/JiayuanWen/projects) for how I list my projects in my site.  
 
