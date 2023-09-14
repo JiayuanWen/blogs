@@ -4,10 +4,11 @@
     <!-- JQuery support -->
     <script src="/js/helper/jquery.min.js"></script>
 
-    <script>
-        
+    <!-- Insert head -->
+    <script> 
         $("head").load("components/head.html", 
             function() {
+                // Change this for each blog
                 $(this).append(`<title>Dynamic Content for GitHub Pages | Jiayuan Wen's Site</title>`);
             }
         );
@@ -16,19 +17,20 @@
 </head>
 <body>
 
+    <!-- Where common body elements are inserted -->
     <div class="main"></div>
 
+    <!-- Insert body elements -->
     <script>
         $('.main').load(`components/body.html`);
     </script>
 
-    
-
+    <!-- Insert blog article -->
     <zero-md class="blog-body" src="resources/blog1/Dynamic-Content-For-GitHub-Pages.md">
-        <script src="/js/helper/prism.js"></script> 
+        <script src="/js/helper/prism.js"></script>  <!-- For stylizing code blocks -->
         <template>
-            <link rel="stylesheet" type="text/css" href="style/main.css" />
-            <link rel="stylesheet" type="text/css" href="style/prism.css" data-noprefix/>      
+            <link rel="stylesheet" type="text/css" href="style/main.css" /> <!-- For applying general style to blog -->
+            <link rel="stylesheet" type="text/css" href="style/prism.css" data-noprefix/> <!-- For stylizing code blocks -->  
         </template>
     </zero-md>
 
