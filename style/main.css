@@ -110,7 +110,7 @@ pre {
         cursor: pointer;
     }
 
-zero-md {
+.blog-body {
     color: white;
 
     position: absolute;
@@ -119,8 +119,9 @@ zero-md {
     top: 10vh;
     margin: 0 auto;
 
-    opacity: 100%;
+    opacity: 0%; /*See blogFadeEffect.js and body.html*/
 
     z-index: 1;
     
+    transition: 0s;
 }
