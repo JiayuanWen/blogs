@@ -33,16 +33,28 @@ h1 h2 h3 h4 h5 h6 {
     
 }
 
-/* Hide scrollbar for Chrome, Safari and Opera */
+/* Custom scrollbar for Chrome, Safari and Opera */
 body::-webkit-scrollbar {
-    display: none;
-  }
-  
-  /* Hide scrollbar for IE, Edge and Firefox */
-  body {
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
-  }
+    z-index: 1;
+    position: fixed;
+    width: 10px;
+}
+    body::-webkit-scrollbar-track {
+        background: #4e4e4e;
+    }
+    body::-webkit-scrollbar-thumb {
+        background: #888;
+        border-radius: 999px;
+    }
+    body::-webkit-scrollbar-thumb:hover {
+        background: rgb(192, 192, 192);
+    }
+
+/* Hide scrollbar for IE, Edge and Firefox */
+body {
+-ms-overflow-style: none;  /* IE and Edge */
+scrollbar-width: none;  /* Firefox */
+}
 
 /* Hyperlink color */
 p > a {
