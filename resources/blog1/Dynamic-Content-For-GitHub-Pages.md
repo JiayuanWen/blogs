@@ -71,7 +71,7 @@ Notice `src` for the `<img>` element, if you have any associated resources (vide
 Replace `<index>` in `content<index>` with the index number corresponding to the content folder the `display.html`  resides in. So for `display.html` in `content1` you replace it with `1`, and so on. 
 
 Next, append this to the end of your file path:
-```
+```text
 https://raw.githubusercontent.com/<username>/<username>.github.io.contents/<name_of_main_branch>
 ```
 Replace `<username>` as stated earlier. Your content repository will likely have a different name for its main branch, in most cases it is either `main` or `master`, change `<name_of_main_branch>` accordingly. 
@@ -86,7 +86,7 @@ The reason we're doing this is because if we link the resources locally, the res
 
 Push everything when you are done.
 
-## Step 5. Insert your contents into your site
+## Step 4. Insert your contents into your site
 
 Now that you have everything stored in your content repository, it is time to access it from your site using JavaScript and jQuery. Shift your attention to your site's repository.
 
@@ -120,7 +120,7 @@ Create a JavaScript script somewhere in your site's repository, and include it i
 <script type="module" src="/path/to/your/script.js"></script>
 ```
 
-### Step 5a. For loading single/specific content:
+### Step 4a. For loading single/specific content:
 
 In your script, first create a fresh `<div>` element for your content:
 ```js
@@ -147,7 +147,7 @@ Remember your `id` for your `<div>`, load the content in with this jQuery code:
 $(`div-name`).load(filePath);
 ```
 
-### Step 5b. For loading a list of contents:
+### Step 4b. For loading a list of contents:
 
 In your script, first create a fresh `<div>` element for your content:
 ```js
@@ -185,7 +185,7 @@ for (let i = 1; i <= contentTotal; i++) {
 }
 ```
 
-## Step 7. Enjoy!
+## Step 5. Enjoy!
 
 Test out your site, you should now see your container occupied with contents from your content repository. 
 
