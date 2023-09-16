@@ -13,7 +13,7 @@ h1 h2 h3 h4 h5 h6 {
 }
 
 .background {
-    background-color: rgb(35, 35, 35);
+    background-color: rgb(32, 32, 32);
 
     position: fixed;
     left: 5.5vw;

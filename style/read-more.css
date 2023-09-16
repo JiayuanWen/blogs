@@ -1,0 +1,14 @@
+.read-more {
+    position: fixed;
+
+    right: 0;
+
+    margin: 30px;
+    margin-top: 100px;
+
+    width: 15vw;
+}
+
+.read-more hr {
+    border-color: rgb(121, 121, 121);
+}
