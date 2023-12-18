@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- JQuery support -->
+    <script src="/js/helper/jquery.min.js"></script>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="/style/main.css"/>
+
+    <!-- Insert head -->
+    <script>
+        $("head").load("components/head.html", 
+            function() {
+                // Change this for each blog
+                $(this).append(`<title>Redirecting | Jiayuan Wen's Site</title>`);
+            }
+        );
+    </script>
+
+    <!-- Auto redirect to associated blog -->
+    <meta http-equiv="refresh" content="0; url=https://jiayuanwen.github.io/blogs/Daydream_Unsupport_Pixel.html" />
+</head>
+
+<!-- In case redirect is unsuccessful -->
+<body>
+    <img src="/site_icon/android-chrome-96x96.png"/> <br/>
+    <br/>
+    Redirecting to blog ID 1... <br/>
+    <br/>
+    If nothing happens <a href="https://jiayuanwen.github.io/blogs/Daydream_Unsupport_Pixel.html">click here</a>
+</body>
