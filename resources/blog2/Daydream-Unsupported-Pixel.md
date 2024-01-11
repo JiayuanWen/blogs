@@ -25,7 +25,7 @@ This tutorial derives from this Reddit post: https://www.reddit.com/r/daydream/c
 
 First, check whether you have Google VR Services, Daydream, and Daydream Keyboard app installed on your device. If so, open your `Settings` app, and uninstall them via `Settings > Apps`.
 
-<img src="https://raw.githubusercontent.com/JiayuanWen/blogs/main/resources/blog2/step1-1.png"/>
+<img src="https://raw.githubusercontent.com/JiayuanWen/blogs/main/resources/blog2/step1-1.png" width="300" />
 
 ## Step 2: Download older version of necessary apps and components
 
