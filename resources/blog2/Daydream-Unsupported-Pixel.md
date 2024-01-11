@@ -30,7 +30,7 @@ First, check whether you have Google VR Services, Daydream, and Daydream Keyboar
 ## Step 2: Download older version of necessary apps and components
 
 Download the following archive, it contains every APKs you need to revive Daydream:
-https://github.com/JiayuanWen/daydream-revival-collection/releases/tag/re1
+https://github.com/JiayuanWen/daydream-revival-collection/releases/latest
 
 Extract the APKs from the archive, and save them to your device. 
 
